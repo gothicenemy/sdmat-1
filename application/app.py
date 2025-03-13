@@ -18,6 +18,32 @@ def solve_quadratic(a, b, c):
         print(f"There are 1 roots\nx1 = {x}")
     else:
         print("There are 0 roots")
+def interactive_mode():
+    while True:
+        try:
+            a = float(input("a = "))
+            if a == 0:
+                raise ValueError("a cannot be 0")
+            break
+        except ValueError:
+            print("Error. Expected a valid real number, got invalid instead", file=sys.stdout)
+    
+    while True:
+        try:
+            b = float(input("b = "))
+            break
+        except ValueError:
+            print("Error. Expected a valid real number, got invalid instead", file=sys.stdout)
+    
+    while True:
+        try:
+            c = float(input("c = "))
+            break
+        except ValueError:
+            print("Error. Expected a valid real number, got invalid instead", file=sys.stdout)
+    
+    print(f"Equation is: ({a}) x^2 + ({b}) x + ({c}) = 0")
+    solve_quadratic(a, b, c)
 
 
 
