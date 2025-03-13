@@ -11,10 +11,10 @@
  
  # Second step
  If u want to run file mode:
- Second one u need to edit additional.txt , write there 3 numbers and add run config:
+ Second one u need to create additional.txt , write there 3 numbers and add run config:
 1. Add new and choose python
 2. In script choose your py file in directory
-3. In script parameters write name of your txt file (in this repo its additional.txt)
+3. In script parameters write name of your txt file (this file need to be in directory with py file)
 4. In working directory choose directory with your files
 
 # Third step
